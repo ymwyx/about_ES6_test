@@ -1,6 +1,7 @@
 
 /*
- * 如果next函数的参数为空，reset就永远是undefined，如果为true,就等于把1赋给reset，
+ * 如果next函数的参数为空，reset就永远是undefined，
+ * 如果next函数的参数不为空，则作为yield的返回值赋给reset，
  * i的值就会变化，从下一个起点开始++；
  */
 
