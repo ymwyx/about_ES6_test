@@ -1,7 +1,7 @@
 var arr = [1, [[2, 3], 4], [5, 6]];
 
 function *a(arr) {
-  for (let i = 0; i < arr.length; i++) {
+  for (let i = 0; i < arr.length; i++) {//不能用foreach，因为foreach的参数是一个普通函数
     if (typeof arr[i] !== 'number') {
       yield* a(arr[i]);//不是数字说明需要解析，所以我们暂停在a(arr[i])的状态；
     }
