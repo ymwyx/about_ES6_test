@@ -11,5 +11,4 @@ for (let i of fibonacci()){
   if (i>100)
     break;
     console.log(i);
-  
 }
