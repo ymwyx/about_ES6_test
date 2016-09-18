@@ -20,6 +20,29 @@ console.log(set);
 /*这是一种去重方法*/
 
 let arr=[2,3,2,2,3,5,6,6,3];
-console.log(Array.from(new Set(arr)));
+// console.log(Array.from(new Set(arr)));
 
 /*并转化为数组～*/
+
+
+/*set的遍历共有4种方法*/
+for (let i of set.keys()){
+  console.log(i);
+}
+
+for (let i of set.values()){
+  console.log(i);
+}
+
+/*以上两种方法是因为set的键值对相同。*/
+
+for (let i of set.entries()){
+  console.log(i);
+}
+/*entries方法返回的遍历器，同时包括键名和键值，所以每次输出一个数组，它的两个成员完全相等。*/
+
+
+
+
+
+
